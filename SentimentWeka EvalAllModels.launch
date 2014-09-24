@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/wstud-thesis-buechner/src/Sentiment.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Sentiment"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-ng 4 -tf train_all_NG4 -tf2 train_GUMLTLT_all_NG4 -tf3 train_KLUE_all_NG4 evalall test_all_de"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="wstud-thesis-buechner"/>
+</launchConfiguration>
