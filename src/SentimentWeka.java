@@ -1412,7 +1412,8 @@ public class SentimentWeka {
         classifier.setProbabilityEstimates(true);
         classifier.setSVMType(new SelectedTag(0, LibLINEAR.TAGS_SVMTYPE));
 //        classifier.setCost(0.005);
-        classifier.setCost(0.05);
+        //classifier.setCost(0.05);
+        classifier.setCost(0.5);
         classifier.buildClassifier(train);
         
 		train.delete();
@@ -1678,8 +1679,8 @@ public class SentimentWeka {
 		LibLINEAR classifier = new LibLINEAR();
         classifier.setProbabilityEstimates(true);
         classifier.setSVMType(new SelectedTag(0, LibLINEAR.TAGS_SVMTYPE));
-		//classifier.setCost(0.15);
-        classifier.setCost(0.09);
+		classifier.setCost(0.07);
+        //classifier.setCost(0.15);
 //		classifier.setCost(0.42);
 		classifier.buildClassifier(train);
 		

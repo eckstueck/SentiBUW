@@ -388,6 +388,7 @@ public class Sentiment {
 				if(gUMLTLTSenti != null && kLUESenti != null){
 					double[] useSentiArray = {0,0,0};
 					for (int i = 0; i < 3; i++){
+						//useSentiArray[i] = (gUMLTLTSenti.getResultDistribution()[i] + kLUESenti.getResultDistribution()[i]) / 2;
 						useSentiArray[i] = (nRCSenti.getResultDistribution()[i] + gUMLTLTSenti.getResultDistribution()[i] + kLUESenti.getResultDistribution()[i]) / 3;
 						//useSentiArray[i] = (nRCSenti.getResultDistribution()[i]);
 					}
@@ -606,7 +607,8 @@ public class Sentiment {
 //			}
 //			System.out.println("end");
 //		}
-		return tweet.trim();
+		//return tweet.trim();
+		return tweet;
 	}
 	
 	private static String filterWord(String word, Boolean useS){
@@ -626,6 +628,7 @@ public class Sentiment {
 	}
 	
 	private static boolean storeTweetUni(String tweetString, String senti, String tweetID, int ngram) throws UnsupportedEncodingException{
+		//Tweet tweet = new Tweet(filterTweet(tweetString), senti, tweetID);
 		Tweet tweet = new Tweet(tweetString, senti, tweetID);
 		
 //	    ArrayList<String> wordlist = new ArrayList<String>();
